@@ -1,5 +1,6 @@
-// --- 您的 Apps Script Web App 網址已更新並貼入此處 ---
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyivLNUdBXHsZvZz_qqr7HhBv3CFIjclEUhb-FidDdSjybCiWa2kMgEDCAXOKG1p84Isw/exec";
+// --- 關鍵配置：您的 Web App 網址已成功貼入此處 ---
+// 請確保這個 URL 在 Apps Script 的存取權設定為「任何人」
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbydVOY5hluHGVvRm2Bcl64jL4f5O-6Nq2GCa4O68nvpukzVA0BnAhVieLNixVUBwCNp/exec";
 // ----------------------------------------------------------------------
 
 
@@ -365,7 +366,7 @@ function collectResults() {
             alert("✅ 感謝您的投票！數據已成功提交。");
             window.location.reload(); 
         } else {
-            // 如果連線成功但 Apps Script 執行失敗
+            // 如果連線成功但 Apps Script 執行失敗 
             alert("❌ 投票提交失敗。請聯繫管理員。錯誤訊息: " + data.message);
         }
     })
