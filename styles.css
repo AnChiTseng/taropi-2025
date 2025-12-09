@@ -1,0 +1,87 @@
+/* 極簡風格 CSS：只保留排版與選取視覺效果 */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    margin-top: 30px;
+    font-size: 1.4em;
+}
+
+/* 選項網格排版 */
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; 
+    padding-top: 10px;
+}
+
+/* 選項卡片基礎樣式 */
+.option-card {
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    background-color: #fff;
+}
+
+/* 核心功能：選中狀態的樣式 */
+.option-card.selected {
+    background-color: #555; /* 選中變為深灰色 */
+    color: white;
+    border-color: #333;
+}
+
+.option-card.selected p {
+    color: #eee;
+}
+
+.option-card h4, .option-card p {
+    margin: 0;
+}
+
+.count-display {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.text-area-section {
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+#favoriteSongText {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    resize: vertical; 
+    box-sizing: border-box;
+}
+
+.submit-button {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #007bff; /* 藍色按鈕 */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
