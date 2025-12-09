@@ -39,13 +39,13 @@ h2 {
 
 /* 核心功能：選中狀態的樣式 */
 .option-card.selected {
-    background-color: #555; /* 選中變為深灰色 */
-    color: white;
-    border-color: #333;
+    background-color: #AEECD9; /* 選中色：薄荷綠 */
+    color: #333; /* 選中時文字保持深色 */
+    border-color: #92b6a9;
 }
 
-.option-card.selected p {
-    color: #eee;
+.option-card.selected h4, .option-card.selected p {
+    color: #333;
 }
 
 .option-card h4, .option-card p {
@@ -71,17 +71,19 @@ h2 {
     box-sizing: border-box;
 }
 
+/* 提交按鈕樣式 */
 .submit-button {
     display: block;
     width: 250px;
     margin: 10px auto;
     padding: 10px;
-    background-color: #007bff; /* 藍色按鈕 */
+    background-color: #784F25; /* 按鈕色：巧克力色 */
     color: white;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .submit-button:hover {
-    background-color: #0056b3;
+    background-color: #5d3e1d; /* 懸停時略深 */
 }
