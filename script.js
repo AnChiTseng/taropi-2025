@@ -1,6 +1,6 @@
-// --- 關鍵配置：您的 Web App 網址已更新至第三版 ---
-// 請確保這個 URL 在 Apps Script 的存取權設定為「任何人」
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxIas4SVcZHyrAnCVJGY6pqN34JUJQY2uPVagCgeZh1ulo4mGwYY9ghZL56PW4KHCfG/exec"; 
+// --- 關鍵配置：您的 Web App 網址已更新至第四版 ---
+// 請確保這個 URL 在 Apps Script 的存取權設定為「所有人」
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwcmuiZ5QYoqlN1mxn1OiVMpkvCdP2uOOpalnAfX_hGaRvkUlVQ8LQhPk2BumqcNMEP/exec"; 
 // ----------------------------------------------------------------------
 
 
