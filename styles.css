@@ -5,6 +5,13 @@ body {
     color: #333;
     max-width: 1000px;
     margin: 0 auto;
+
+    /* --- 這裡開始是新增的背景圖片設定 --- */
+    background-image: url('bg.jpg'); /* 替換成您的圖片名稱 */
+    background-size: cover; /* 圖片覆蓋整個背景 */
+    background-attachment: fixed; /* 背景圖片不隨內容滾動 */
+    background-color: #f4f4f4; /* 如果圖片載入失敗，顯示的顏色 */
+    /* --- 新增設定結束 --- */
 }
 
 h1 {
@@ -35,12 +42,15 @@ h2 {
     cursor: pointer;
     transition: background-color 0.1s;
     background-color: #fff;
+    
+    /* --- 這裡讓選項按鍵更圓潤 --- */
+    border-radius: 8px; 
 }
 
 /* 核心功能：選中狀態的樣式 */
 .option-card.selected {
     background-color: #AEECD9; /* 選中色：薄荷綠 */
-    color: #333; /* 選中時文字保持深色 */
+    color: #333; 
     border-color: #92b6a9;
 }
 
@@ -61,6 +71,8 @@ h2 {
     padding: 15px;
     border: 1px solid #ddd;
     margin-bottom: 20px;
+    /* 讓心願區塊邊緣也圓潤一點 */
+    border-radius: 8px;
 }
 
 #favoriteSongText {
@@ -69,6 +81,8 @@ h2 {
     border: 1px solid #ccc;
     resize: vertical; 
     box-sizing: border-box;
+    /* 讓輸入框邊緣也圓潤一點 */
+    border-radius: 4px;
 }
 
 /* 提交按鈕樣式 */
@@ -82,8 +96,11 @@ h2 {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    
+    /* 讓提交按鈕圓潤 */
+    border-radius: 8px;
 }
 
 .submit-button:hover {
-    background-color: #5d3e1d; /* 懸停時略深 */
+    background-color: #5d3e1d; 
 }
