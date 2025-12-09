@@ -1,7 +1,7 @@
-// --- 關鍵步驟：貼入最新的 Web App 網址 ---
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbcx-2fboZB9Nv7WlARgkvJnwbd16KEBKK9Tuv5Ez1hZO8YxyFUDMS84-aAFd7qlBMoY/exec"; 
+// --- 關鍵配置：您的 Web App 網址已更新至第三版 ---
+// 請確保這個 URL 在 Apps Script 的存取權設定為「任何人」
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxIas4SVcZHyrAnCVJGY6pqN34JUJQY2uPVagCgeZh1ulo4mGwYY9ghZL56PW4KHCfG/exec"; 
 // ----------------------------------------------------------------------
-// ... 檔案的其他程式碼保持不變
 
 
 // --- A. 您的所有投票選項資料都放在這裡 (歌單) ---
