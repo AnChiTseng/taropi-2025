@@ -1,5 +1,7 @@
-// --- 關鍵步驟：已將您的 Web App 網址貼入此處 ---
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx6oMrHDy9bJ2s-NIrzb9GbW73oi7-zMuwgO02yxoqR0ig8euPnDMT45jO-oW0ioCtegQ/exec";
+// --- 請務必將 GitHub 儲存庫中的 script.js 替換為以下完整內容 ---
+
+// 您的 Web App 網址已成功貼入此處，這是數據傳輸的終點！
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyivLNUdBXHsZvZz_qqr7HhBv3CFIjclEUhb-FidDdSjybCiWa2kMgEDCAXOKG1p84Isw/exec";
 // ----------------------------------------------------------------------
 
 
@@ -231,7 +233,7 @@ const selectedVotes = {
 };
 
 
-// 動態渲染所有投票區塊 (程式碼與前次一致)
+// 動態渲染所有投票區塊
 function renderVotingSections() {
     const mainContainer = document.getElementById('votingApp');
     mainContainer.innerHTML = ''; 
@@ -280,7 +282,7 @@ function renderVotingSections() {
 }
 
 
-// 處理多選和數量限制 (程式碼與前次一致)
+// 處理多選和數量限制
 function handleVote(sectionKey, optionId, cardElement) {
     const section = votingSections[sectionKey];
     const votes = selectedVotes[sectionKey];
@@ -301,7 +303,7 @@ function handleVote(sectionKey, optionId, cardElement) {
     updateSelectionCount(sectionKey);
 }
 
-// 更新區塊的已選數量顯示 (程式碼與前次一致)
+// 更新區塊的已選數量顯示
 function updateSelectionCount(sectionKey) {
     const countDisplay = document.getElementById(`count_${sectionKey}`);
     const currentCount = selectedVotes[sectionKey].size;
@@ -365,13 +367,15 @@ function collectResults() {
             alert("✅ 感謝您的投票！數據已成功提交。");
             window.location.reload(); 
         } else {
+            // 如果連線成功但 Apps Script 執行失敗 (例如 Sheet 名稱錯誤)
             alert("❌ 投票提交失敗。請聯繫管理員。錯誤訊息: " + data.message);
         }
     })
     .catch(error => {
+        // 如果是網路連線本身的錯誤 (例如網址無效、權限被拒絕)
         submitBtn.disabled = false;
         submitBtn.textContent = '提交您的投票與心願';
-        alert("❌ 連線錯誤，請檢查您的網路並重試。");
+        alert("❌ 連線錯誤，請檢查您的網路或 Apps Script 部署權限。");
     });
 }
 
