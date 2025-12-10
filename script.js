@@ -1,6 +1,6 @@
-// --- 關鍵配置：您的 Web App 網址已更新至第四版 ---
+// --- 關鍵配置：您的 Web App 網址已更新至最新版 ---
 // 請確保這個 URL 在 Apps Script 的存取權設定為「所有人」
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwcmuiZ5QYoqlN1mxn1OiVMpkvCdP2uOOpalnAfX_hGaRvkUlVQ8LQhPk2BumqcNMEP/exec"; 
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzU7olEV2-WWuddMdIhK3hYRfg74CDoy83XlMYWuSGsgtmKMyM92JsBnpegC-hQM9wG/exec"; 
 // ----------------------------------------------------------------------
 
 
